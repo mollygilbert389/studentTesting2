@@ -1,0 +1,686 @@
+/* nav bar */
+
+.topbar-responsive {
+    background: #2c3840;
+    padding: 1rem 1.5rem;
+  }
+  
+  .topbar-responsive .topbar-responsive-logo {
+    color: #fefefe;
+    vertical-align: middle;
+  }
+  
+  .topbar-responsive .menu {
+    background: #2c3840;
+  }
+  
+  .topbar-responsive .menu li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .topbar-responsive .menu a {
+    color: #fefefe;
+    transition: color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu a:hover {
+    color: #c6d1d8;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive .menu a {
+      padding: 0.875rem 0;
+    }
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button {
+    color: #fefefe;
+    border-color: #fefefe;
+    border-radius: 5000px;
+    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button:hover {
+    color: #c6d1d8;
+    border-color: #c6d1d8;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive .menu .topbar-responsive-button {
+      width: 100%;
+      margin: 0.875rem 0;
+    }
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive {
+      padding: 0.75rem;
+    }
+    .topbar-responsive .top-bar-title {
+      position: relative;
+      width: 100%;
+    }
+    .topbar-responsive .top-bar-title span {
+      position: absolute;
+      right: 0;
+      border: 1px solid #fefefe;
+      border-radius: 5px;
+      padding: 0.25rem 0.45rem;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    .topbar-responsive .top-bar-title span .menu-icon {
+      margin-bottom: 4px;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes slideDown {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive-links {
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation-duration: 0.5s;
+              animation-duration: 0.5s;
+      width: 100%;
+      -webkit-animation: fadeIn 1s ease-in;
+              animation: fadeIn 1s ease-in;
+    }
+  }
+  
+  h1 {
+      font-size: 60px;
+    }
+
+  .subheader {
+    color: white;
+  }  
+  
+  /* //hero */
+  
+  .middle-content-section {
+    height: 65vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-content-section {
+    max-width: inherit;
+    margin: 0 auto;
+    padding-top: 8%;
+    color: white;
+    text-align: center;
+  }
+
+  .bottom-content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+  
+      @media screen and (min-width: 40em) {
+      padding-left: 0%;
+      }
+  }
+
+  .hero-button {
+    margin-top: 10px;
+  }
+
+  .instructor-hero-content {
+    max-width: inherit;
+    margin: 0 auto;
+    padding-top: 25%;
+    color: white;
+    text-align: center;
+  }
+
+
+  /*full page hero*/
+  .homepage-hero {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: url("../img/claude-sanders-SyRRzZ0XzaM-unsplash.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  
+  .hero-full-screen .middle-content-section {
+    text-align: center;
+    color: #fefefe;
+  }
+  
+  .hero-full-screen .top-content-section {
+    width: 100%;
+  }
+  
+  .hero-full-screen .bottom-content-section {
+    padding: 1rem;
+  }
+  
+  .hero-full-screen .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #fefefe;
+  }
+
+  .instructors-hero {
+    height: 100vh;
+    background-image: url('../img/thought-catalog-xHaZ5BW9AY0-unsplash.jpg');
+  }
+  .students-hero {
+    height: 50vh;
+    background-image: url('../img/element5-digital-jCIMcOpFHig-unsplash.jpg');
+  }
+  .lessons-hero {
+    height: 50vh;
+    background-image: url('../img/element5-digital-OyCl7Y4y0Bk-unsplash.jpg');
+  }
+
+  .lessons-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* lesson image hover text styling */
+  .lesson-card {
+    position: relative;
+    width: 50%;
+  }
+  
+  .lesson-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .lesson-card:hover .image {
+    opacity: 0.3;
+  }
+  
+  .lesson-card:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #2ba6cb;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 3px;
+  }
+  
+  /* //three sections */
+  .marketing-site-three-up {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;  
+      max-width: inherit;
+  
+  }
+  
+  .columns {
+      margin-bottom: 1rem;
+  
+      @media screen and (min-width: 40em) {
+          margin-bottom: 0;
+      }
+  }
+  
+  .fa {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #2ba6cb;
+  }
+  
+  
+  .marketing-site-three-up-headline {
+    margin-bottom: 2rem;
+    font-size: 24px;
+  }
+
+  /* Instructor Courses page styling */
+.basic-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 0;
+  background: #fefefe;
+  box-shadow: none;
+  overflow: hidden;
+  color: #0a0a0a;
+  /* margin: 1px; */
+  width: 20%;
+  padding: 0;
+}
+
+.basic-card > :last-child {
+  margin-bottom: 0;
+}
+
+.basic-card-image img {
+  width: 100%;
+}
+
+.basic-card-content {
+  border: 0;
+  margin: 0;
+  overflow: scroll;
+}
+
+.courses-row {
+  margin-top: 30px;
+}
+
+.courses-block {
+  margin: 40px 20px 20px 40px;
+}
+
+/* .dropdown {
+  display: block;
+  box-sizing: border-box;
+  width: 75%;
+  height: 2.4375rem;
+  margin: 0 0 1rem;
+  padding: 0.5rem;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+  background-color: #fefefe;
+} */
+
+.roster-delete {
+  padding: 6px;
+  font-size: 15px;
+}
+
+/* student portal pop-up email form */
+
+.contact-panel-button {
+  background: #0a0a0a;
+  color: #fefefe;
+  width: auto;
+  padding: 0.25rem 1.25rem;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  right: 16px;
+  transition: background 0.25s ease-in-out;
+  
+}
+
+.contact-panel-button:after {
+  content: "⥣";
+  margin-left: 5px;
+}
+
+.contact-panel-button:hover {
+  background: #242424;
+  color: #f0f0f0;
+}
+
+.is-active .contact-panel-button:after {
+  content: "⥥";
+}
+
+.contact-panel {
+  padding: 1rem;
+  z-index: 1;
+  background: #0a0a0a;
+  width: 350px;
+  height: 400px;
+  position: fixed;
+  bottom: -400px;
+  right: 20px;
+  transition: bottom 0.5s ease-in-out;
+}
+
+.contact-panel label {
+  color: #fefefe;
+  width: 100%;
+}
+
+.contact-panel input[type="text"],
+.contact-panel input[type="email"],
+.contact-panel textarea {
+  background: #303030;
+  border: #0a0a0a;
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-panel input[type="text"]:focus,
+.contact-panel input[type="email"]:focus,
+.contact-panel textarea:focus {
+  background: #fefefe;
+}
+
+.contact-panel .contact-panel-actions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-panel .submit-button {
+  margin-bottom: 0;
+}
+
+.contact-panel .cancel-button {
+  margin-bottom: 0;
+  padding: 0.75rem 1rem;
+  color: #fefefe;
+  transition: background 0.25s ease-in-out;
+}
+
+.contact-panel .cancel-button:hover {
+  background: #242424;
+  color: #f0f0f0;
+}
+
+.contact-panel.is-active {
+  bottom: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .contact-panel {
+    width: 100%;
+    right: 0;
+  }
+}
+
+.popup-modal {
+  right: 50px;
+}
+
+/* lessons page styling */
+
+.filter-simple .button-group {
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter-simple .filter-simple-button.hollow.is-active, .filter-simple .filter-simple-button.hollow:focus, .filter-simple .filter-simple-button.hollow:active {
+  background-color: #2ba6cb;
+  color: #fefefe;
+}
+
+.button-group.round :first-child {
+  border-radius: 5000px 0 0 5000px;
+}
+
+.button-group.round :last-child {
+  border-radius: 0 5000px 5000px 0;
+}
+
+.column-block {
+  margin-bottom: 30px;
+}
+
+.lessons-row {
+  margin-top: 20px;
+}
+
+/*   footer */
+
+.marketing-site-footer-bottom {
+  background: #2c3840;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.marketing-site-footer-bottom p,
+.marketing-site-footer-bottom .menu {
+  margin-bottom: 0;
+}
+
+.marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
+  color: #8aa0ae;
+}
+
+@media screen and (max-width: 63.9375em) {
+  .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  .marketing-site-footer-bottom {
+    text-align: center;
+  }
+}
+
+  .footer-copy {
+      margin-left: 1rem;
+      line-height: 1.125rem;
+      color: white;
+  }
+
+  /*Student Roster Page Styling*/
+
+  .responsive-card-table {
+    border-collapse: collapse;
+  }
+  
+  .responsive-card-table.unstriped tbody {
+    background-color: transparent;
+  }
+  
+  .responsive-card-table th {
+    background-color: #e6e6e6;
+  }
+  
+  .responsive-card-table tr,
+  .responsive-card-table th,
+  .responsive-card-table td {
+    border: 1px solid #0a0a0a;
+  }
+
+  #table-header {
+    width: 200px;
+
+  }
+  
+  @media screen and (max-width: 640px) {
+    /* .responsive-card-table {
+      
+    } */
+    .responsive-card-table thead tr {
+      position: absolute;
+      top: -9999em;
+      left: -9999em;
+    }
+    .responsive-card-table tr {
+      border: 1px solid #0a0a0a;
+      display: block;
+    }
+    .responsive-card-table tr + tr {
+      margin-top: 1.5rem;
+    }
+    .responsive-card-table td {
+      border: none;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-bottom: 1px solid #0a0a0a;
+      padding-left: 50%;
+      position: relative;
+    }
+    .responsive-card-table td:before {
+      content: attr(data-label);
+      display: inline-block;
+      font-weight: bold;
+      line-height: 1.5;
+      margin-left: -100%;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    .responsive-card-table td:after {
+      content: '';
+      position: absolute;
+      background: #e6e6e6;
+      width: 45%;
+      height: 95%;
+      left: 1px;
+      top: 1px;
+      z-index: 0;
+    }
+  }
+  
+
+  /* contact us modal */
+  .contact-form {
+    width: 350px;
+    margin-right: 0px;
+  }
+  
+  .contact-field {
+    width: 110%;
+  }
+
+  .message {
+    margin-right: 0;
+    width: 115%;
+  }
+
+  #messagePwd {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #messagePwd p {
+    padding: 10px 35px;
+    font-size: 9px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "/2713";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+  }
+
+  /* #contact-Modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+
+
+
+
+  
+  

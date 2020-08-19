@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POD | E-Learning</title>
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/d22ca23eb9.js" crossorigin="anonymous"></script>
+    
+    <!-- foundation CDN script -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    
+    <!-- Foundation Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/foundation.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/public/css/foundation.min.css"> -->
+   <link rel="stylesheet" type="text/css" href="../css/app.css">
+
+   <!--Video loading CDN using video JS-->
+   <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+
+  </head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="top-bar topbar-responsive">
+    <div class="top-bar-title">
+      <a class="topbar-responsive-logo" href="../index.html"><strong>POD | E-Learning</strong></a>
+    </div>
+    <div id="topbar-responsive" class="topbar-responsive-links">
+      <div class="top-bar-right">
+        <ul class="menu simple vertical medium-horizontal">
+            <li><a href="../index.html">Home</a></li>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="students.html">Students</a></li>
+          <!-- <li><a href="#">Account</a></li> -->
+          <li>
+            <button type="button" a href="#" class="button login-button hollow topbar-responsive-button" data-open="login-Modal">Login</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero content -->
+    <div class="lessons-hero homepage-hero middle-content-section">
+        <div class="hero-content-section roster-hero">
+                <script id="course-name-template" type="text/x-handlebars-template"><h1 id="course-name">{{ data.course_name }} Lessons</h1></script>
+            <p class="subheader">View and manage course lessons & content.</p>
+            <a href="instructor-courses.html"><button class="button large hero-button">Back to Courses</button></a>
+            <a href="#"><button class="button large hero-button" data-open="lesson-Modal">Add New Lesson</button></a>
+        </div>
+    </div>
+
+    <!-- courses content-->
+    <section class="filter-simple lessons-row">
+      <div class="button-group round">
+        <button class="button hollow filter-simple-button is-active" data-filter="all">All</button>
+        <button class="button hollow filter-simple-button" data-filter="current">Current</button>
+        <button class="button hollow filter-simple-button" data-filter="past">Past</button>
+        <button class="button hollow filter-simple-button" data-filter="future">Future</button>
+      </div>
+    
+      <div class="row small-up-2 medium-up-3 courses-block">
+        <div class="column column-block filter-simple-item current">
+          <a href="course.html"><img src="https://spaceholder.cc/350x350" alt=""/></a>
+        </div>
+        <div class="column column-block filter-simple-item past">
+          <a href="course.html"><img src="https://placeimg.com/350/350/animals" alt=""/></a>
+        </div>
+        <div class="column column-block filter-simple-item past">
+          <a href="course.html"><img src="https://placeimg.com/350/350/animals" alt=""/></a>
+        </div>
+        <div class="column column-block filter-simple-item past">
+          <a href="course.html"><img src="https://placeimg.com/350/350/animals" alt=""/></a>
+        </div>
+        <div class="column column-block filter-simple-item future">
+          <a href="course.html"><img src="https://placeimg.com/350/350/nature" alt=""/></a>
+        </div>
+        <div class="column column-block filter-simple-item future">
+          <a href="course.html"><img src="https://placeimg.com/350/350/nature" alt=""/></a>
+        </div>
+        <div class="column column-block filter-simple-item future">
+          <a href="course.html"><img src="https://placeimg.com/350/350/nature" alt=""/></a>
+        </div>
+        <div class="column column-block filter-simple-item current">
+          <a href="course.html"><img src="https://spaceholder.cc/350x350" alt=""/></a>
+        </div>
+        <div class="column column-block filter-simple-item current">
+          <a href="course.html"><img src="https://spaceholder.cc/350x350" alt=""/></a>
+        </div>
+      </div>
+  </section>
+
+    <!-- Login Modal -->
+<div class = "reveal" id="login-Modal" data-reveal>
+    <div class="login-box">
+      <div class="row collapse expanded">
+        <div class="small-12 medium-6 column small-order-2 medium-order-1">
+          <div class="login-box-form-section">
+            <h1 class="login-box-title">LOG IN</h1>
+            <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
+            <input class="login-box-input" type="password" name="password" placeholder="Password" />
+            <input class="login-box-submit-button button medium" type="submit" name="signin_submit" value="Login" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Add New Lesson Modal -->
+<div class = "reveal" id="lesson-Modal" data-reveal>
+    <div class="course-box">
+      <div class="row collapse expanded">
+        <div class="small-12 medium-6 column small-order-2 medium-order-1">
+          <div class="course-modal-form-section">
+            <h1 class="course-modal-title">Add New Lesson</h1>
+            <input class="course-modal-input lesson-name" type="text" name="lessonname" placeholder="Lesson Name"/>
+            <input class="course-modal-input lesson-url" type="text" name="lessonurl" placeholder="Lesson URL"/>
+            <!-- <div>
+                <input class="course-modal-input" type="text" name="lessonname" placeholder="Lesson Name"/>
+                <label>Mathematics</label>
+            </div> -->
+            <!-- <div>
+                <input class="course-modal-input" type="checkbox" name="mathcheckbox" placeholder="Science"/>
+                <label>Science</label>
+            </div>
+            <div>
+                <input class="course-modal-input" type="checkbox" name="mathcheckbox" placeholder="Social Studies"/>
+                <label>Social Studies</label>
+            </div>
+            <div>
+                <input class="course-modal-input" type="checkbox" name="mathcheckbox" placeholder="Language Arts"/>
+                <label>Language Arts</label>
+            </div> -->
+            <input class="course-modal-submit-button button medium" type="submit" name="new_lesson_submit" value="Add Lesson"/>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- Contact Us Modal -->
+  <div class = "reveal" id="contact-Modal" data-reveal>
+    <div class="contact-box">
+      <div class="row collapse expanded">
+        <div class="small-12 medium-6 column small-order-2 medium-order-1 contact-form">
+            <div class="contact-box-form-section contact-form">
+                <h1 class="contact-box-title">Contact Us</h1>
+                <label id="contact-field">Full name *
+                    <input type="text" id="contact-field" placeholder="Full name">
+                </label>
+            </div>
+            <div class="contact-form">
+              <label id="contact-field">Email *
+                <input type="email" id="contact-field" placeholder="Email address">
+              </label>
+            </div>
+            <div class="contact-form">
+              <label id="contact-field">Message *
+                <textarea id="contact-field" placeholder="Describe your needs" rows="3"></textarea>
+              </label>
+            <input class="login-box-submit-button button medium" type="submit" name="signin_submit" value="Send Email" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="marketing-site-footer-bottom">
+        <div class="row large-unstack align-middle">
+            <div class="column">
+            <p class="footer-copy">&copy; 2020 All rights reserved</p>
+            </div>
+            <div class="column">
+            <ul class="menu marketing-site-footer-bottom-links footer-copy">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/instructors.html">Instructors</a></li>
+                <li><a href="html/students.html">Students</a></li>
+                <!-- <li><a href="#">Account</a></li> -->
+                <li><a href="#" data-open="contact-Modal">Contact Us</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+  <script src="../js/vendor/what-input.js"></script>
+  <script src="../js/vendor/foundation.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+</body>
+</html>
